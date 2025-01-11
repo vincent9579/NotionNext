@@ -105,9 +105,6 @@ export const BlogPostCardInfo = ({
             </div>
           </div>
         </div>
-        
-        {/* 字数统计 */}
-        <WordCount />
       </div>
     </article>
   )
