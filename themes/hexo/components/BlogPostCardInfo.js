@@ -5,6 +5,7 @@ import { siteConfig } from '@/lib/config'
 import { formatDateFmt } from '@/lib/utils/formatDate'
 import Link from 'next/link'
 import TagItemMini from './TagItemMini'
+import WordCount from './WordCount'
 
 /**
  * 博客列表的文字内容
@@ -104,6 +105,9 @@ export const BlogPostCardInfo = ({
             </div>
           </div>
         </div>
+        
+        {/* 字数统计 */}
+        <WordCount />
       </div>
     </article>
   )
