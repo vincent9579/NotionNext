@@ -5,6 +5,7 @@ import { useGlobal } from '@/lib/global'
 import { formatDateFmt } from '@/lib/utils/formatDate'
 import Link from 'next/link'
 import TagItemMini from './TagItemMini'
+import WordCount from './WordCount'
 
 /**
  * 文章详情页的Hero块
@@ -82,7 +83,7 @@ export default function PostHero({ post, siteInfo }) {
               </div>
             )}
           </section>
-
+          <WordCount />
           <div className='mt-4 mb-1'>
             {post.tagItems && (
               <div className='flex justify-center flex-nowrap overflow-x-auto'>
